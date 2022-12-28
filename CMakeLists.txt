@@ -13,7 +13,7 @@ project(pico_pio_pwm C CXX ASM)
 pico_sdk_init()
 add_executable(pico_pio_pwm
 main.c
-src/MPU6050.c
+MPU6050.c
 )
 
 pico_generate_pio_header(pico_pio_pwm ${CMAKE_CURRENT_LIST_DIR}/pico_servo.pio)
